@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+.w3-sidebar a {font-family: "Roboto", sans-serif}
+body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
+.button{
+ position: fixed;
+ bottom: 100px;
+ right: 50px;
+ z-index: 99;
+}
+.topnav {
+  overflow: hidden;
+  background-color: #e9e9e9;
+}
+
+.topnav a {
+  float: right;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  width: 300px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #2196F3;
+  color: white;
+}
+
+.topnav .search-container {
+  float: left;
+  padding-left: 10px;
+}
+
+.topnav input[type=text] {
+  padding: 6px;
+  margin-top: 8px;
+  font-size: 17px;
+  border: none;
+  width: 650px;
+  
+}
+
+.topnav .search-container button {
+  float: right;
+  padding: 6px 10px;
+  margin-top: 8px;
+  margin-right: 16px;
+  background: #ddd;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+}
+
+.topnav .search-container button:hover {
+  background: #ccc;
+}
+</style>
+<body class="w3-display-container">
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-bar-block w3-white w3-collapse w3-top" style="z-index:3;width:250px" id="mySidebar">
+  <div class="w3-container w3-display-container w3-padding-16">
+    <i onclick="w3_close()" class="fa fa-remove w3-hide-large w3-button w3-display-topright"></i>
+    <img src="img/logo.png" style="width: 200px;height: 100px;">
+  </div>
+  <div class="w3-padding-16 w3-large w3-text-grey" style="font-weight:bold">
+	<a href="#" class="w3-bar-item w3-button">Task And Projects</a>
+    <a href="#" class="w3-bar-item w3-button">Workgroup</a>
+    <a href="#" class="w3-bar-item w3-button">Activity Stream</a>
+    <a href="#" class="w3-bar-item w3-button">Time And Project Report</a>
+    <a href="#" class="w3-bar-item w3-button">Workflow</a>
+    <a href="#" class="w3-bar-item w3-button">Webmail</a>
+    <a href="#" class="w3-bar-item w3-button">Chats And Call</a>
+	<a href="#" class="w3-bar-item w3-button">Calendar</a>
+	<a href="#" class="w3-bar-item w3-button">Contact Center</a>
+	<a href="#" class="w3-bar-item w3-button">FAQ</a>
+	<a href="#" class="w3-bar-item w3-button">Bitrix24.drive</a>
+    <a href="#" class="w3-bar-item w3-button">Knowledge Base</a>
+	<a href="#" class="w3-bar-item w3-button">Employees</a>
+	<a href="#" class="w3-bar-item w3-button">Applications</a>
+	<a href="#" class="w3-bar-item w3-button">Sales</a>
+	
+  </div>
+</nav>
+
+<!-- Top menu on small screens -->
+<header class="w3-bar w3-top w3-hide-large w3-white w3-xlarge">
+  <div class="w3-bar-item w3-padding-24 w3-wide"><img src="img/logo.png" style="width: 80px; height: 50px;"></div>
+  <a href="javascript:void(0)" class="w3-bar-item w3-button w3-padding-24 w3-right" onclick="w3_open()"><i class="fa fa-bars"></i></a>
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:250px">
+
+  <!-- Push down content on small screens -->
+  <div class="w3-hide-large" style="margin-top:83px"></div>
+  
+  <div class="topnav">
+  <a class="active" href="#home"><img src="img/user.png" class="w3-left w3-circle w3-margin-right"  style="width:30px; height: 30px;"><span class="w3-large">User</span><br></a>
+  <a href="#clock"><span>8.00 PM Clock IN</span></a>
+  <div class="search-container">
+    <form action="/action_page.php">
+      <input type="text" placeholder="Search.." name="search">
+      <button type="submit"><i class="fa fa-search"></i></button>
+    </form>
+  </div>
+  </div>
+
+  
+ 
+  <!-- Image header -->
+  <div class="w3-display-container w3-container w3-margin-top">
+    <img src="img/office.jpg" alt="Jeans" style="width:100%; height: 500px;" >
+    <div class="w3-display-bottomright w3-text-white" style="padding:24px 48px">
+      <p><a href="#jeans" class="w3-button  w3-padding-large w3-large w3-blue">KNOW MORE</a></p>
+    </div>
+  </div>
+  
+  <div class="w3-container w3-padding-large" style="margin-bottom:32px">
+    <h4><b>About Us</b></h4>
+    <p>Over the years, Cloud Counselage has been on a mission to develop and groom freshers and professionals PAN India to become IT and Management pioneers. To accomplish this mission, we have Started  Interships Program(IP)  in Various Departments for the  interns.</p>
+    <hr>
+    
+    <h4><b>Task And Projects</b></h4>
+    <!-- Progress bars / Skills -->
+	<h5 class="w3-opacity"><b>Live Project</b></h5>
+    <div class="w3-light-grey w3-round-xlarge w3-small">
+        <div class="w3-container w3-center w3-round-xlarge w3-blue-grey" style="width:90%">
+            <div class="w3-center w3-text-white">90%</div>
+        </div>
+    </div>
+	<div class="w3-container">
+          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>15 June 2020 - <span class="w3-tag w3-teal w3-round">Currently Working</span></h6>
+	</div>	
+	<hr>
+	<h5 class="w3-opacity"><b>LP 3</b></h5>
+    <div class="w3-light-grey w3-round-xlarge w3-small">
+        <div class="w3-container w3-center w3-round-xlarge w3-blue-grey" style="width:100%">
+            <div class="w3-center w3-text-white">100%</div>
+        </div>
+    </div>
+	<div class="w3-container">
+          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>15 April 2020 - 15 June 2020</h6>
+	</div>
+	<hr>
+	<h5 class="w3-opacity"><b>LP 2</b></h5>
+    <div class="w3-light-grey w3-round-xlarge w3-small">
+        <div class="w3-container w3-center w3-round-xlarge w3-blue-grey" style="width:100%">
+            <div class="w3-center w3-text-white">100%</div>
+        </div>
+    </div>
+	<div class="w3-container">
+          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>March 2020 - 15 April 2020</h6>
+	</div>
+	<hr>
+	<h5 class="w3-opacity"><b>LP 1</b></h5>
+	<div class="w3-light-grey w3-round-xlarge w3-small">
+        <div class="w3-container w3-center w3-round-xlarge w3-blue-grey" style="width:100%">
+            <div class="w3-center w3-text-white">100%</div>
+        </div>
+    </div>
+	<div class="w3-container">
+          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>March 2020 - 15 April 2020</h6>
+	</div>	
+    <hr>
+    
+    <h4><b>Workgroup</b></h4>
+    <!-- Pricing Tables -->
+    <div class="w3-row-padding" style="margin:0 -16px">
+      <div class="w3-half w3-margin-bottom">
+        <ul class="w3-ul w3-border w3-white">
+		<li class="w3-blue-grey w3-xlarge w3-padding-24">General Workgroup</li>
+          <li class="w3-light-grey w3-padding-24">
+            <img src="https://cdn2.vectorstock.com/i/thumb-large/34/96/flat-busness-man-user-profile-avatar-in-suit-vector-4333496.jpg" class="w3-left w3-circle w3-margin-right"  style="width:60px">
+            <span class="w3-large">202003-IP</span><br>
+            <span>765 Members</span>
+          </li>
+        </ul>
+      </div>
+      
+      <div class="w3-half">
+        <ul class="w3-ul w3-border w3-white">
+          <li class="w3-blue-grey w3-xlarge w3-padding-24">Development Workgroup</li>
+          <li class="w3-light-grey w3-padding-24">
+            <img src="https://cdn2.vectorstock.com/i/thumb-large/34/96/flat-busness-man-user-profile-avatar-in-suit-vector-4333496.jpg" class="w3-left w3-circle w3-margin-right" style="width:60px">
+            <span class="w3-large">202003-IP-WEB DEVELOPMENT</span><br>
+            <span>104 Members</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Middle Column -->
+  <h4 class="w3-margin-left"><b>Activity</b></h4>
+      <div class="w3-container w3-card w3-white w3-round w3-margin"><br>
+        <img src="https://cdn3.iconfinder.com/data/icons/business-avatar-1/512/3_avatar-512.png" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:60px">
+        <span class="w3-right w3-opacity">1 week</span>
+        <h4>Project Manager</h4><br>
+          <div class="w3-row-padding" style="margin:0 -16px">
+            <div class="w3-half">
+              <img src="img/activity2.jpg" style="width:100%; height: 400px;"  alt="Northern Lights" class="w3-margin-bottom">
+            </div>
+            <div class="w3-half">
+              <img src="img/activity3.jpg" style="width:100%; height: 400px;" alt="Nature" class="w3-margin-bottom">
+          </div>
+		  <hr class="w3-clear">
+        <p>This is the 2nd week of development of project by the end of this week 50% of project should be completed </p>
+        </div>
+        <button type="button" class="w3-button w3-theme-d1 w3-margin-bottom w3-blue"><i class="fa fa-thumbs-up"></i>  Like</button> 
+        <button type="button" class="w3-button w3-theme-d2 w3-margin-bottom w3-blue"><i class="fa fa-comment"></i>  Comment</button> 
+      </div>
+      
+      <div class="w3-container w3-card w3-white w3-round w3-margin"><br>
+        <img src="https://cdn3.iconfinder.com/data/icons/business-avatar-1/512/3_avatar-512.png" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:60px">
+        <span class="w3-right w3-opacity">2 week</span>
+        <h4>Project Manager</h4><br>
+        <hr class="w3-clear">
+        <p>This is the 1st week of development of project created the project plan and requirement report</p>
+        <button type="button" class="w3-button w3-theme-d1 w3-margin-bottom w3-blue"><i class="fa fa-thumbs-up"></i>  Like</button> 
+        <button type="button" class="w3-button w3-theme-d2 w3-margin-bottom w3-blue"><i class="fa fa-comment"></i>  Comment</button> 
+      </div>  
+
+      <div class="w3-container w3-card w3-white w3-round w3-margin"><br>
+        <img src="img/admin.png" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:60px">
+        <span class="w3-right w3-opacity">3 week </span>
+        <h4>Admin</h4><br>
+        <hr class="w3-clear">
+        <p>Have you seen this?</p>
+        <img src="img/activity1.jpg" style="width:800px; height: 500px; margin-left: 200px;" class="w3-margin-bottom">
+        <p>An online webinar has been scheduled on 15th july at 8.00pm for web development intern.</p>
+        <button type="button" class="w3-button w3-theme-d1 w3-margin-bottom w3-blue"><i class="fa fa-thumbs-up"></i>  Like</button> 
+        <button type="button" class="w3-button w3-theme-d2 w3-margin-bottom w3-blue"><i class="fa fa-comment"></i>  Comment</button> 
+      </div> 
+      
+    <!-- End Middle Column -->
+
+   <!---- FAQ Button--------------->
+  <div class="button">
+  <a href="./bot.html"><button class="w3-button w3-circle w3-blue w3-xlarge"><i class="fa fa-comments-o"></i></button></a>
+  </div> 
+  
+  <!-- Footer -->
+  <footer class="w3-padding-32 w3-light-grey w3-small w3-center" id="footer">
+    <div class="w3-row-padding">
+      <div class="w3-col s4">
+        <h4>Contact</h4>
+        <p><i class="fa fa-fw fa-map-marker"></i> Company Name</p>
+        <p><i class="fa fa-fw fa-phone"></i> 0044123123</p>
+        <p><i class="fa fa-fw fa-envelope"></i> ex@mail.com</p>
+      </div>
+
+      <div class="w3-col s4">
+        <h4>About</h4>
+        <p><a href="#">About us</a></p>
+        <p><a href="#">We're hiring</a></p>
+        <p><a href="#">Support</a></p>
+      </div>
+
+      <div class="w3-col s4 w3-justify">
+        <h4>Follow Us On </h4>
+        <br>
+        <div class="w3-bar-item">
+        <i class="fa fa-facebook-official w3-hover-opacity w3-large"></i>
+        <i class="fa fa-instagram w3-hover-opacity w3-large"></i>
+        <i class="fa fa-twitter w3-hover-opacity w3-large"></i>
+        <i class="fa fa-linkedin w3-hover-opacity w3-large"></i>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <div class="w3-blue-grey w3-center w3-padding-16"><p>Copyright 2020. All Rights Reserved</p></div>
+
+  <!-- End page content -->
+</div>
+
+<script>
+// Accordion 
+function myAccFunc() {
+  var x = document.getElementById("demoAcc");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else {
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+
+// Click on the "Jeans" link on page load to open the accordion for demo purposes
+document.getElementById("myBtn").click();
+
+
+// Open and close sidebar
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("myOverlay").style.display = "none";
+}
+</script>
+
+</body>
+</html>
